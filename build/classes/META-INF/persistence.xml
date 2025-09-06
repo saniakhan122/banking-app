@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="3.0" xmlns="https://jakarta.ee/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://jakarta.ee/xml/ns/persistence https://jakarta.ee/xml/ns/persistence/persistence_3_0.xsd">
+	<persistence-unit name="banking-web" transaction-type="RESOURCE_LOCAL">
+		<class>com.oracle.beans.Customer</class>
+		<class>com.oracle.beans.BankAccount</class>
+		<class>com.oracle.beans.Transaction</class>
+		<class>com.oracle.beans.AccountCreationRequest</class>
+		<class>com.oracle.beans.AdminUser</class>
+		<class>com.oracle.beans.OTP</class>
+		<class>com.oracle.beans.Session</class>
+		<class>com.oracle.beans.CustomerLogin</class>
+		<properties>
+			<property name="jakarta.persistence.jdbc.url" value="jdbc:oracle:thin:@//localhost:1521/orclpdb"/>
+			<property name="jakarta.persistence.jdbc.user" value="bank_user"/>
+			<property name="jakarta.persistence.jdbc.password" value="bank123"/>
+						<property name="jakarta.persistence.jdbc.driver" value="oracle.jdbc.OracleDriver"/>
+		</properties>
+	</persistence-unit>
+</persistence>
+
+
+
+
+
+
+
+
