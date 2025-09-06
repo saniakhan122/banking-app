@@ -11,9 +11,9 @@
 		<class>com.oracle.beans.TransactionWithType</class>
 		<class>com.oracle.beans.OtpRequest</class>
 		<properties>
-			<property name="jakarta.persistence.jdbc.url" value="jdbc:oracle:thin:@//localhost:1521/orclpdb"/>
-			<property name="jakarta.persistence.jdbc.user" value="bank_user"/>
-			<property name="jakarta.persistence.jdbc.password" value="bank123"/>
+			<property name="jakarta.persistence.jdbc.url" value="jdbc_url"/>
+			<property name="jakarta.persistence.jdbc.user" value="user"/>
+			<property name="jakarta.persistence.jdbc.password" value="pwd"/>
 						<property name="jakarta.persistence.jdbc.driver" value="oracle.jdbc.OracleDriver"/>
 		</properties>
 	</persistence-unit>
